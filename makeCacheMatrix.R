@@ -1,8 +1,9 @@
-## the task is to cache the inverse of a matrix
-## to do that, the functions should be able to
-## cache its inverse and create a special matrix object
-## to get the matrix, the function should be makeCacheMatrix
-## it is said that this function creates a
+## first, cache the inverse of a matrix
+## the functions should be able to
+## cache its inverse and 
+## create a special matrix object
+## the function should be makeCacheMatrix to get the matrix
+## this function is said to create a
 ## special "matrix" object that can cache its inverse
 
 makeCacheMatrix <- function(x = matrix()){
@@ -17,11 +18,12 @@ makeCacheMatrix <- function(x = matrix()){
   list(set = set, get = get, setInverse = setInverse, getInverse =getInverse)
 }
 
-## the next function should be cacheSolve
-## this function calculates the inverse that is 
+## the next function is cachesolve
+## it calculates the inverse that is 
 ## returned by makeCacheMatrix above.
-## to retrive the inverse of the cache, we need
-## to observe if the matrix has not been change after
+## in order to retrive the inverse of the cache, 
+## we need to observe if the matrix
+## has not been change after
 ## the inverse of the special "matrix"
 ## object has been calculated.
 
